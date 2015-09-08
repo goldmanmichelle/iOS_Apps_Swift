@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StartingBackground2" translatesAutoresizingMaskIntoConstraints="NO" id="3vf-72-wBH">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3vf-72-wBH" secondAttribute="height" multiplier="1:1" id="3VF-bA-CxQ"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="3VF-bA-CxQ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="3VF-bA-CxQ"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hubert" translatesAutoresizingMaskIntoConstraints="NO" id="nim-LM-Ftf">
+                    <rect key="frame" x="211" y="212" width="58" height="56"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.28627450980392155" green="1" blue="0.5607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="nim-LM-Ftf" secondAttribute="centerX" id="6yJ-bd-CTK"/>
+                <constraint firstItem="nim-LM-Ftf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9ze-Da-3j5"/>
+                <constraint firstItem="nim-LM-Ftf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="K8J-mc-mxc"/>
+                <constraint firstAttribute="centerY" secondItem="nim-LM-Ftf" secondAttribute="centerY" id="Ten-ra-nkR"/>
+                <constraint firstItem="nim-LM-Ftf" firstAttribute="centerX" secondItem="3vf-72-wBH" secondAttribute="centerX" id="XMa-Ga-tCP"/>
+                <constraint firstItem="nim-LM-Ftf" firstAttribute="centerY" secondItem="3vf-72-wBH" secondAttribute="centerY" id="aCc-xD-KpT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="6yJ-bd-CTK"/>
+                    <exclude reference="9ze-Da-3j5"/>
+                    <exclude reference="K8J-mc-mxc"/>
+                    <exclude reference="Ten-ra-nkR"/>
+                    <exclude reference="XMa-Ga-tCP"/>
+                    <exclude reference="aCc-xD-KpT"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=regular">
+                <mask key="constraints">
+                    <include reference="6yJ-bd-CTK"/>
+                    <include reference="Ten-ra-nkR"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <exclude reference="6yJ-bd-CTK"/>
+                    <include reference="9ze-Da-3j5"/>
+                    <include reference="K8J-mc-mxc"/>
+                    <exclude reference="Ten-ra-nkR"/>
+                    <include reference="XMa-Ga-tCP"/>
+                    <include reference="aCc-xD-KpT"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Hubert" width="39" height="40"/>
+        <image name="StartingBackground2" width="1136" height="640"/>
+    </resources>
+</document>
